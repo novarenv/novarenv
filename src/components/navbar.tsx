@@ -67,7 +67,7 @@ export const Navbar = () => {
           {
             NAV_MENU.map((nav, i) => {
               return (
-                <NavItem nav={nav} />
+                <NavItem nav={nav} key={i}/>
               )
             })
           }
@@ -89,7 +89,7 @@ export const Navbar = () => {
             {
               NAV_MENU.map((nav, i) => {
                 return (
-                  <SideItem nav={nav} toggleSidebar={toggleSidebar} />
+                  <SideItem nav={nav} toggleSidebar={toggleSidebar} key={i} />
                 )
               })
             }

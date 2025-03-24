@@ -16,12 +16,12 @@ export default function Home() {
             Hi,
           </p>
           <p className="text-[48px] md:text-[100px] sm:-mt-8 font-bold">
-            I'm Varen
+            I&apos;m Varen
           </p>
           <p className="md-[36px] text-light-text-secondary dark:text-dark-text-secondary text-justify">
-            I'm an AI graduate student at NUIST, passionate about mobile and web development.
+            I&apos;m an AI graduate student at NUIST, passionate about mobile and web development.
             I excel in machine learning and have a strong background in AI technologies.
-            Beyond my technical expertise, I'm actively involved in leadership roles within academic communities
+            Beyond my technical expertise, I&apos;m actively involved in leadership roles within academic communities
             and organizations, balancing my technical pursuits with organizational responsibilities.
           </p>
         </div>

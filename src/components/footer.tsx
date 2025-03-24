@@ -8,7 +8,6 @@ import Image from 'next/image';
 export const Footer = () => {
   const { theme, setTheme } = useTheme()
   const [isOpen, setIsOpen] = useState(false);
-  const [isDownloading, setIsDownloading] = useState(false);
 
   const styles = {
     "icons": "flex gap-[24px] items-center justify-center col-span-4",
