@@ -62,7 +62,7 @@ export const Navbar = () => {
 
         {/* Desktop navigation */}
         <div
-          className="hidden md:flex justify-center items-center border-0 w-full h-full"
+          className="hidden md:flex justify-center items-center border-0 w-full h-full text-xl"
         >
           {
             NAV_MENU.map((nav, i) => {
@@ -85,7 +85,6 @@ export const Navbar = () => {
           </button>
 
           <div className="flex flex-col space-y-4 mt-8">
-
             {
               NAV_MENU.map((nav, i) => {
                 return (

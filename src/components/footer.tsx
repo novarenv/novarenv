@@ -86,6 +86,17 @@ export const Footer = () => {
     <footer className="grid grid-flow-col w-full h-12 hover:cursor-pointer">
       <div className={styles.icons}>
         <a
+          onClick={handleDownload}
+          className={"h-6 w-6 relative aspect-square"}>
+          <Image
+            src="pdf.gif"
+            alt={"CV Novaren Veraldo"}
+            unoptimized={true}
+            layout="fill"
+            objectFit="cover"
+          />
+        </a>
+        <a
           className={styles.iconContainer}
           href={styles.instagram.link}
           target="_blank"
@@ -124,17 +135,6 @@ export const Footer = () => {
           target="_blank"
         >
           <IoMdMail className={styles.icon} />
-        </a>
-        <a
-          onClick={handleDownload}
-          className={"h-6 w-6 relative aspect-square"}>
-          <Image
-            src="pdf.gif"
-            alt={"Hello"}
-            unoptimized={true}
-            layout="fill"
-            objectFit="cover"
-          />
         </a>
       </div>
 
