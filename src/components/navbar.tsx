@@ -10,12 +10,12 @@ const NAV_MENU = [
     link: "/"
   },
   {
-    name: "Projects",
-    link: "/"
+    name: "Experience",
+    link: "/experience"
   },
   {
-    name: "Certificates",
-    link: "/"
+    name: "Certifications",
+    link: "/certifications"
   }
 ];
 
@@ -54,7 +54,7 @@ export const Navbar = () => {
       <div className="flex justify-between items-center p-4">
         {/* Hamburger menu for mobile */}
         <button
-          className="block md:hidden"
+          className="block md:hidden cursor-pointer"
           onClick={toggleSidebar}
         >
           <FaBars className="h-6 w-6 dark:text-dark-text-primary text-light-text-primary" />
@@ -75,7 +75,7 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile sidebar */}
-      <div className={`fixed top-0 right-0 h-full w-64 bg-light-accent dark:bg-dark-accent shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${isOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
+      <div className={`fixed top-0 left-0 h-full w-64 bg-light-accent dark:bg-dark-accent shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden`}>
         <div className="flex flex-col p-4">
           <button
             className="self-end"

@@ -1,28 +1,19 @@
 import Image from "next/image";
-import { Navbar, Footer } from "@/components";
+import { Layout } from "@/components";
 
-export default function Home() {
-  const styles = {
-    "main": "grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 font-[family-name:var(--font-geist-sans)] bg-light-bg dark:bg-dark-bg"
-  }
-
+const Home = () => {
   return (
-    <div className={styles.main}>
-      <Navbar />
-
-      <main className="sm:grid sm:grid-flow-col grid-flow-row sm:grid-cols-6 gap-[32px] row-start-2 sm:items-start">
+    <Layout>
+      <main className="sm:grid sm:grid-flow-col grid-flow-row sm:grid-cols-6 gap-[32px] row-start-2 sm:items-start mt-4">
         <div className="col-span-4 sm:leading-tight text-light-text-primary dark:text-dark-text-primary p-4 sm:p-12">
           <p className="text-[24px] md:text-[72px]">
             Hi,
           </p>
-          <p className="text-[48px] md:text-[100px] sm:-mt-8 font-bold">
+          <p className="text-[48px] md:text-[100px] md:-mt-8 font-bold">
             I&apos;m Varen
           </p>
           <p className="md-[36px] text-light-text-secondary dark:text-dark-text-secondary text-justify">
-            I&apos;m an AI graduate student at NUIST, passionate about mobile and web development.
-            I excel in machine learning and have a strong background in AI technologies.
-            Beyond my technical expertise, I&apos;m actively involved in leadership roles within academic communities
-            and organizations, balancing my technical pursuits with organizational responsibilities.
+            Passionate developer with expertise in frontend web and mobile development, machine learning, and AI. Currently pursuing a Master's in Artificial Intelligence at Nanjing University of Information Science and Technology. Experienced in ReactJS, React Native, and TensorFlow, with a strong foundation in agile methodologies and RESTful API integration. Possesses excellent communication skills, adaptability, and problem-solving abilities. Demonstrates strong teamwork and collaboration capabilities, with a proven track record of leadership in student organizations. Committed to continuous learning and staying updated with the latest technological trends.
           </p>
         </div>
 
@@ -37,8 +28,8 @@ export default function Home() {
         </div>
 
       </main>
-
-      <Footer />
-    </div>
+    </Layout>
   );
 }
+
+export default Home

@@ -22,7 +22,7 @@ export const Footer = () => {
       "link": "https://medium.com/@novarenv"
     },
     "mail": {
-      "link": "mailto:novarenv@gmail.com"
+      "link": "mailto:novaren.work@gmail.com"
     },
     "icon": "h-6 w-6 fill-current text-light-text-primary dark:text-dark-text-primary",
     "toggle": "flex items-center justify-end w-full fixed bottom-10 right-8"
